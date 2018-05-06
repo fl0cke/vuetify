@@ -12,8 +12,6 @@ function Vuetify (Vue, args) {
   })
 }
 
-Vuetify.version = process.env.VUETIFY_VERSION
-
 if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(Vuetify)
 }
