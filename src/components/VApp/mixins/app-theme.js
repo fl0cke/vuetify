@@ -13,10 +13,9 @@ export default {
     /** @return string */
     generatedStyles () {
       const theme = this.parsedTheme
-      let css
 
       if (this.$vuetify.options.themeCache != null) {
-        css = this.$vuetify.options.themeCache.get(theme)
+        let css = this.$vuetify.options.themeCache.get(theme)
         if (css != null) return css
       }
 
@@ -24,6 +23,7 @@ export default {
 
       if (!colors.length) return ''
 
+      let css = ''
       for (let i = 0; i < colors.length; ++i) {
         const name = colors[i]
         const value = theme[name]
