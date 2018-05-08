@@ -24,8 +24,6 @@ export default {
 
       if (!colors.length) return ''
 
-      css = `a { color: ${intToHex(theme.primary)}; }`
-
       for (let i = 0; i < colors.length; ++i) {
         const name = colors[i]
         const value = theme[name]
