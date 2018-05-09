@@ -1,0 +1,38 @@
+@import '../bootstrap'
+@import '../theme'
+
+/** Themes */
+
+v-btn-toggle-label($material)
+  color: $material.text.secondary
+
+theme(v-btn-toggle-label, "v-btn-toggle-label")
+
+.v-btn-toggle-label
+  flex: 0 1 auto
+  border-radius: $button-border-radius
+  height: $button-height
+  font-size: $button-font-size
+  font-weight: $button-font-weight
+  margin: $button-margin
+  min-width: $button-min-width
+  outline: 0
+  text-transform: $button-text-transform
+  text-decoration: none
+  transition: .3s $transition.swing, color 1ms
+  position: relative
+  vertical-align: middle
+  user-select: none
+  padding: $button-padding
+  background-color: transparent
+  box-shadow: none
+
+  &--small
+    font-size: $button-small-font-size
+    height: $button-small-height
+    padding: $button-small-padding
+
+  &--large
+    font-size: $button-large-font-size
+    height: $button-large-height
+    padding: $button-large-padding

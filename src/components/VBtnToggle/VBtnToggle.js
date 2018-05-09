@@ -19,13 +19,15 @@ export default {
       required: false
     },
     mandatory: Boolean,
-    multiple: Boolean
+    multiple: Boolean,
+    block: Boolean
   },
 
   computed: {
     classes () {
       return {
         'v-btn-toggle': true,
+        'v-btn-toggle--block': this.block,
         'v-btn-toggle--selected': this.hasValue,
         'theme--light': this.light,
         'theme--dark': this.dark
