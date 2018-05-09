@@ -13,8 +13,10 @@ theme(v-btn-toggle-label, "v-btn-toggle-label")
   border-radius: $button-border-radius
   height: $button-height
   font-size: $button-font-size
+  line-height: $button-font-size
   font-weight: $button-font-weight
-  margin: $button-margin
+  padding: 0 8px
+  margin: 0
   min-width: $button-min-width
   outline: 0
   text-transform: $button-text-transform
@@ -23,16 +25,18 @@ theme(v-btn-toggle-label, "v-btn-toggle-label")
   position: relative
   vertical-align: middle
   user-select: none
-  padding: $button-padding
   background-color: transparent
   box-shadow: none
+  text-align: center
 
   &--small
     font-size: $button-small-font-size
+    line-height: $button-small-font-size
     height: $button-small-height
     padding: $button-small-padding
 
   &--large
     font-size: $button-large-font-size
+    line-height: $button-large-font-size
     height: $button-large-height
     padding: $button-large-padding
