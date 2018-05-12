@@ -131,6 +131,11 @@ theme(v-toolbar, "v-toolbar")
   &--dense
     v-toolbar-content(7px)
 
+.v-toolbar--inset .v-toolbar-content
+  for $size, $width in $container-max-widths
+    @media only screen and (min-width: $width)
+      max-width: ($width * 0.9375) // Credit to bootstrap
+
 v-toolbar-content(left)
   .v-toolbar__content,
   .v-toolbar__extension

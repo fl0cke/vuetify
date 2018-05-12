@@ -62,6 +62,7 @@ export default {
       type: [Number, String],
       validator: v => !isNaN(parseInt(v))
     },
+    inset: Boolean,
     invertedScroll: Boolean,
     manualScroll: Boolean,
     prominent: Boolean,
@@ -121,6 +122,7 @@ export default {
         'v-toolbar--fixed': !this.absolute && (this.app || this.fixed),
         'v-toolbar--floating': this.floating,
         'v-toolbar--prominent': this.prominent,
+        'v-toolbar--inset': this.inset,
         'theme--dark': this.dark,
         'theme--light': this.light
       })
